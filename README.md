@@ -25,6 +25,7 @@ Java课程作业项目仓库
 ## 核心方法  
 
 1.方法（processor赋值方法，setcentre和sethertz赋值方法与此类似）
+```
 public void setProcessor(String m) {
 	if(m=="Intel" || m=="AMD")
 		processor=m;
@@ -33,7 +34,9 @@ public void setProcessor(String m) {
 	    	processor="404000";
 	    	}
 	}
+```
 2.方法（CPU类中两个构造方法）
+```
 public CPU(int centre) {
 	setCentre(centre);	
 }
@@ -42,8 +45,9 @@ public CPU(String processor,double hertz) {
 	setProcessor(processor);
 	setHertz(hertz);
 }
-
+```
 3.方法（setamount赋值方法，setreadspeed赋值方法与此类似）
+```
 public void setAmount(int amount) {
 	if(amount>160 && amount<1024)
         this.amount = amount;
@@ -52,12 +56,16 @@ public void setAmount(int amount) {
 	}
 
  }
+ ```
 4.方法（HardDisk类两个构造方法）
+```
 public HardDisk(int amount,int readSpeed) {
 	setAmount(amount);
 	setReadSpeed(readSpeed);
 }
+```
 5.方法(PC类中主构造方法)
+```
 public HardDisk(){
 	
 }
@@ -65,7 +73,9 @@ public PC(CPU cpu,HardDisk HD) {
 	setCPU(cpu);
 	setHardDisk(HD);
 }
+```
 6.方法(Test类中运行本程序主方法)
+```
 public class Test {
 
    public static void main(String args[]) {
@@ -83,6 +93,7 @@ public class Test {
     }
 
 }
+```
 ## 实验结果
 The right result:
 ![The right result](https://github.com/MOOxhnh/bipt-java-1/blob/main/%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C.png) 
